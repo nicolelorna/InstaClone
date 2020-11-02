@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_baseline_home_24"
@@ -12,21 +13,24 @@
         android:icon="@drawable/ic_baseline_search_24"
         android:enabled="true"
         android:title="search"/>
+
     <item
         android:id="@+id/add"
-        android:icon="@drawable/ic_baseline_add_circle_outline_24"
+        android:icon="@drawable/ic_add"
         android:enabled="true"
         android:title="add"/>
+
     <item
-        android:id="@+id/favourite"
-        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:id="@+id/activity"
+        android:icon="@drawable/ic_heart"
         android:enabled="true"
-        android:title="favourite"/>
+        android:title="activity"/>
+
     <item
-        android:id="@+id/person"
+        android:id="@+id/profile"
         android:icon="@drawable/ic_baseline_person_24"
         android:enabled="true"
-        android:title="person"/>
+        android:title="profile"/>
 
 
 

@@ -18,7 +18,7 @@ class InstaPostAdapter(var instaPostList: List<InstaPost>):RecyclerView.Adapter<
 
     override fun getItemCount(): Int {
         return instaPostList.size
-        Glide.with()
+       // Glide.with()
     }
 
     override fun onBindViewHolder(holder: InstaPostViewHolder, position: Int) {

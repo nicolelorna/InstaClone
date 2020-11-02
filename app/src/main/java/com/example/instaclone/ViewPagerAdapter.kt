@@ -6,7 +6,9 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.example.instaclone.Fragments.*
 
 
-class ViewPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
+class ViewPagerAdapter(
+    fragmentManager: FragmentManager
+) : FragmentPagerAdapter(fragmentManager) {
     override fun getCount(): Int {
         return 5
     }

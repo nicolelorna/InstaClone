@@ -11,8 +11,8 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarHome"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
         android:layout_marginTop="4dp"
         android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
@@ -20,20 +20,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_camera"
-            tools:ignore="VectorDrawableCompat" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_marginLeft="-8dp"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/ic_logo"
-            tools:ignore="VectorDrawableCompat" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_camera"
+                tools:ignore="VectorDrawableCompat" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="-8dp"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_logo"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -46,12 +55,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvStories"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarHome"/>
+        app:layout_constraintTop_toBottomOf="@+id/toolbarHome" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvNewsFeed"
@@ -59,9 +68,8 @@
         android:layout_height="568dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:listitem="@layout/row_post_item"
-        app:layout_constraintTop_toBottomOf="@id/rvStories"/>
-
+        app:layout_constraintTop_toBottomOf="@id/rvStories"
+        tools:listitem="@layout/row_post_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
