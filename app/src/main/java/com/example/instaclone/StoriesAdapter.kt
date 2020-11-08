@@ -27,7 +27,7 @@ class StoriesAdapter(var storiesList:List<Story>):RecyclerView.Adapter<StoriesAd
             .load(stories.imageURL)
             .circleCrop()
             .placeholder(R.drawable.ic_profile_pic)
-            //.into(holder.rowview.imgStory1)
+            .into(holder.rowview.imgStory1)
 
     }
 

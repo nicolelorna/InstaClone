@@ -11,7 +11,7 @@ import com.example.instaclone.Story
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
-class HomeFragment : Fragment() {
+class  HomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +33,7 @@ class HomeFragment : Fragment() {
         inflater.inflate(R.menu.menu_home, menu)
         setHasOptionsMenu(true)
         showStories()
+        //showPosts()
     }
 
     fun showStories() {
